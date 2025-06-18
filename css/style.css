@@ -1,4 +1,3 @@
-/* RESET: Elimina márgenes y rellenos por defecto en todos los elementos */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@ header{
     width: 1200px;
     height: 100px;
     background: #660000FF;
-    display: flex; /* alinea horizontalmente */
+    display: flex; 
     justify-content: space-around;
     align-items: center;
 }
@@ -22,22 +21,178 @@ header .logo a{
     font-weight: 400;
     font-size: 48px;
     text-transform: uppercase;
-}
-header .menu ul{
-    display: flex; /* alinea horizontalmente */
-    list-style: none;
-}
-.menu li{
-    margin:10px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-a{
     text-decoration: none;
     color: #f9f0e2;
+}
+nav {
+    position: sticky;
+    top: 0;
+}
+.menu ul {
+    list-style: none;
+}
+.menu > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.menu a {
+    display: block;
+    padding: 14px;
+    text-decoration: none; 
+    color: #f9f0e2;
+    font-size: 16px;
+
+}
+.menu a:hover {
+    background: rgb(145, 18, 18);
+}
+.banner img{
+    width: 1200px; 
+    height: 540px;
+    display: block;
+    margin: auto;
+}
+.noticias, .sedes, .contacto{
+    margin: 0 auto;
+    width: 1200px; 
+    padding: 46px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  #660000FF;
+    background-color: #f9f0e2;
+}
+.noticias h2, .sedes h2, .contacto h2{
+    text-transform: uppercase;
+}
+.noticias> div , .sedes>div, .contacto>div{
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+    justify-content: space-around;
+    width: 1200px;
+}
+.noticias> div >div {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+.noticias img{
+    width: 360px;
+    height: 210px;
+}
+.noticias h3, .sedes h3, .contacto h3{
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.noticias div div p:first-of-type{
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.noticias div div p:nth-of-type(2){
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+.sedes{
+    background-color:  #660000FF;
+    color: #f9f0e2;
+}
+.sedes> div >div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+}
+.sedes img{
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+}
+.sedes div div p{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contacto> div >div {
+    display: flex;
+    flex-direction: column;
+}
+.contacto h3{
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+}
+.contacto_ubicacion p{
+    margin-top: 10px;
     font-size: 16px;
 }
-main{
-    margin: 10 auto;
+.contacto_redes{
+    margin-top: 100px;
+}
+.contacto_redes ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.contacto_redes a{
+    margin-right: 10px;
+}
+.contacto_redes img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+.contacto_formulario div{
     display: block;
+    background-color: white;
+    width: 540px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #868686FF;
+    border-radius: 10px;
+}
+.contacto_formulario div:nth-of-type(3){
+    height: 110px;
+
+}
+.contacto_formulario p{
+    margin: 15px;
+    font-size: 16px;
+}
+.contacto_formulario a{
+    text-decoration: none;
+    width: 120px;
+    background: #660000FF;
+    border: 1px solid #868686FF;
+    border-radius: 10px;
+    color: #f9f0e2;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+}
+.contacto_formulario a:hover{
+    background: rgb(145, 18, 18);
+}
+footer{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 80px;
+    background: #660000FF;
+}
+footer p{
+    color: #f9f0e2;
 }
