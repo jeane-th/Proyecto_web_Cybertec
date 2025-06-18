@@ -1,0 +1,43 @@
+/* RESET: Elimina márgenes y rellenos por defecto en todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+header{
+    margin: 0 auto;
+    display: block;
+    width: 1200px;
+    height: 100px;
+    background: #660000FF;
+    display: flex; /* alinea horizontalmente */
+    justify-content: space-around;
+    align-items: center;
+}
+header .logo a{
+    font-family: "Alumni Sans Inline One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+header .menu ul{
+    display: flex; /* alinea horizontalmente */
+    list-style: none;
+}
+.menu li{
+    margin:10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: #f9f0e2;
+    font-size: 16px;
+}
+main{
+    margin: 10 auto;
+    display: block;
+}
