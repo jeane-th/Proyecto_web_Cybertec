@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+header{
+    margin: 0 auto;
+    display: block;
+    width: 1200px;
+    height: 100px;
+    background: #660000FF;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+header .logo a{
+    font-family: "Alumni Sans Inline One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f9f0e2;
+}
+nav {
+    position: sticky;
+    top: 0;
+}
+.menu ul {
+    list-style: none;
+}
+.menu > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.menu a {
+    display: block;
+    padding: 14px;
+    text-decoration: none; 
+    color: #f9f0e2;
+    font-size: 16px;
+
+}
+.menu a:hover {
+    background: rgb(145, 18, 18);
+}
+
+.trofeos, .sedes, .contacto{
+    margin: 0 auto;
+    width: 1200px; 
+    padding: 46px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  #660000FF;
+    background-color: #f9f0e2;
+}
+.trofeos h2, .sedes h2, .contacto h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.trofeos> div , .sedes>div, .contacto>div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    justify-content: space-around;
+    width: 680px;
+    height: 150px;
+    border: 1px solid #660000FF;
+}
+.trofeos> div >div {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    margin: 25px;
+}
+.trofeos img{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+}
+.trofeos h3, .sedes h3, .contacto h3{
+    display: block;
+    font-size: 16px;
+}
+.trofeos div div p:first-of-type{
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.trofeos div div p:nth-of-type(2){
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 80px;
+    background: #660000FF;
+}
+footer p{
+    color: #f9f0e2;
+}
