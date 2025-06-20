@@ -45,66 +45,54 @@ nav {
     font-size: 16px;
 
 }
-.menu a:hover {
-    background: rgb(145, 18, 18);
-}
-
-.trofeos, .sedes, .contacto{
+.premios{
     margin: 0 auto;
     width: 1200px; 
-    padding: 46px 0px;
+    padding: 46px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color:  #660000FF;
     background-color: #f9f0e2;
+    
 }
-.trofeos h2, .sedes h2, .contacto h2{
+.premios h2{
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.trofeos> div , .sedes>div, .contacto>div{
+.premios> div{
     display: flex;
     flex-direction: row;
-    margin: 10px auto;
+    margin: 20px 0px 0px;
     justify-content: space-around;
     width: 680px;
     height: 150px;
     border: 1px solid #660000FF;
 }
-.trofeos> div >div {
+.premios> div >div{
     display: flex;
     flex-direction: column;
     width: 510px;
     margin: 25px;
 }
-.trofeos img{
+.premios img{
     width: 100px;
     height: 100px;
     margin: 25px;
 }
-.trofeos h3, .sedes h3, .contacto h3{
+.premios h3{
     display: block;
     font-size: 16px;
 }
-.trofeos div div p:first-of-type{
+.premios div div p:first-of-type{
     font-size: 12px;
-    font-style: italic;
     margin-top: 10px;
-}
-.trofeos div div p:nth-of-type(2){
-    margin-top: 10px;
-    font-size: 14px;
     text-align: justify;
 }
 
-
-
-
-
-
-
-
+.premios:nth-of-type(3){
+    padding-bottom: 46px;
+}
 
 footer{
     margin: 0 auto;
