@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color:#b9b3a8;
+}
+header{
+    margin: 0 auto;
+    display: block;
+    width: 1200px;
+    height: 100px;
+    background: #660000FF;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+header .logo a{
+    font-family: "Alumni Sans Inline One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f9f0e2;
+}
+nav {
+    position: sticky;
+    top: 0;
+}
+.menu ul {
+    list-style: none;
+}
+.menu > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.menu a {
+    display: block;
+    padding: 14px;
+    text-decoration: none; 
+    color: #f9f0e2;
+    font-size: 16px;
+}
+.menu a:hover {
+    background: rgb(145, 18, 18);
+    font-weight: 700;
+    border-radius: 10px;
+}
+.banner img{
+    width: 1200px; 
+    height: 540px;
+    display: block;
+    margin: auto;
+}
+main {
+    width: 1200px;
+    margin: auto;
+    flex-direction: row;
+    background-color: #f9f0e2;
+}
+.contenedor-general {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.contenedor-fixture {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 2;
+}
+.tabla-fixture {
+    width: 250px;
+    background-color: #f9f0e2;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px;
+    margin-bottom: 20px;
+}
+.tabla-fixture h2 {
+    background-color:#660000FF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial;
+    font-size: 1.4em;
+    margin: 0;
+}
+.tabla-fixture table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabla-fixture td {
+    padding: 8px 10px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+.contenedor-resultados {
+    max-width: 335px;
+    flex: 1;
+    padding: 20px;
+    background-color:rgb(102, 0, 0);
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.contenedor-resultados h2 {
+    text-align: center;
+    font-family: Arial;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+}
+.tabla-resultados h3 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.253);
+
+}
+.tabla-resultados table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.tabla-resultados td {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: #f9f0e2;
+}
+footer{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 80px;
+    background: #660000FF;
+}
+footer p{
+    color: #f9f0e2;
+}

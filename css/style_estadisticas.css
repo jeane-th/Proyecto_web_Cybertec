@@ -50,8 +50,37 @@ nav {
     font-weight: 700;
     border-radius: 10px;
 }
-
-
+.tabla > h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #660000FF;
+}
+.tabla {
+    background-color: #f9f0e2;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+table {
+    width: 650px;
+}
+table, thead, tbody, tr, th, td{
+    margin: 0 auto; 
+    border: solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+td {
+    padding: 20px;
+    background-color: white;
+}
+th{
+    padding: 20px;
+    background-color: #780001;
+    color: white;
+    border-color: black;
+}
 .premios{
     margin: 0 auto;
     width: 1200px; 
@@ -69,12 +98,15 @@ nav {
 }
 .premios> div{
     display: flex;
-    flex-direction: row;
-    margin: 20px 0px 0px;
-    justify-content: space-around;
-    width: 680px;
-    height: 150px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 600px;
+    height: 125px;
+    background-color: white;
     border: 1px solid #660000FF;
+    margin: 10px 0;
+    padding: 0 20px;
+    border-radius: 5px;
 }
 .premios> div >div{
     display: flex;
@@ -86,19 +118,11 @@ nav {
     width: 100px;
     height: 100px;
     margin: 25px;
+    border-radius: 50%;
 }
 .premios h3{
     display: block;
     font-size: 16px;
-}
-.premios div div p:first-of-type{
-    font-size: 12px;
-    margin-top: 10px;
-    text-align: justify;
-}
-
-.premios:nth-of-type(3){
-    padding-bottom: 46px;
 }
 
 footer{

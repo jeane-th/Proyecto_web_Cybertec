@@ -4,6 +4,7 @@
 }
 body{
     font-family: "Roboto", sans-serif;
+    background-color:#b9b3a8;
 }
 header{
     margin: 0 auto;
@@ -46,6 +47,8 @@ nav {
 }
 .menu a:hover {
     background: rgb(145, 18, 18);
+    font-weight: 700;
+    border-radius: 10px;
 }
 .banner img{
     width: 1200px; 
@@ -66,7 +69,7 @@ nav {
 .reglamento h2, .emparejamiento h2, .transmision h2{
     text-transform: uppercase;
 }
-.reglamento> div , .emparejamiento>div, .transmision>div{
+.reglamento> div , .transmision> div{
     display: flex;
     flex-direction: row;
     margin: 40px 80px;
@@ -98,7 +101,6 @@ nav {
     font-size: 16px;
     margin-top: 15px;
 }
-
 .reglamento div div p{
     margin-bottom: 10px;
     font-size: 14px;
@@ -108,14 +110,87 @@ nav {
     background-color:  #660000FF;
     color: #f9f0e2;
 }
+.emparejamiento h3{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.emparejamiento_diagrama{
+    margin: 40px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.emparejamiento_semifinal{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.emparejamiento_final{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/**.emparejamiento img{
-
-}**/
-.emparejamiento div div p{
-    margin-top: 10px;
-    font-size: 14px;
-    text-align: center;
+.semifinal_equipos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin: 20px auto;
+}
+.semifinal_partido{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.equipo{
+    display: flex;
+    align-items: center;
+    width: 260px;
+    justify-content: space-between;
+}
+.equipo_ganador_uno{
+    justify-content: flex-start;
+    width: 210px;
+}
+.equipo_ganador_dos{
+    justify-content: flex-end;
+    width: 210px;
+}
+.equipo p{
+    margin: 0px 10px 0px 10px;
+    font-size: 16px;
+}
+.linea_vertical{
+    width: 5px;
+    height: 135px;
+    background-color: aliceblue;
+}
+.linea_horizontal{
+    width: 30px;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+.emparejamiento img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #f9f0e2;
+}
+.final img{
+    width: 130px;
 }
 .transmision iframe{
     margin-top: 40px;

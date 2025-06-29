@@ -4,6 +4,7 @@
 }
 body{
     font-family: "Roboto", sans-serif;
+    background-color:#b9b3a8;
 }
 header{
     margin: 0 auto;
@@ -43,10 +44,11 @@ nav {
     text-decoration: none; 
     color: #f9f0e2;
     font-size: 16px;
-
 }
 .menu a:hover {
     background: rgb(145, 18, 18);
+    font-weight: 700;
+    border-radius: 10px;
 }
 .banner img{
     width: 1200px; 
@@ -152,7 +154,8 @@ nav {
     width: 30px;
     border-radius: 100%;
 }
-.contacto_formulario div{
+
+.contacto_formulario .input_texto, .contacto_formulario textarea{
     display: block;
     background-color: white;
     width: 540px;
@@ -160,17 +163,25 @@ nav {
     margin-bottom: 20px;
     border: 1px solid #868686FF;
     border-radius: 10px;
+    padding: 0px 10px;
 }
-.contacto_formulario div:nth-of-type(3){
-    height: 110px;
+/*
+.input_texto:focus-visible{
+    border: 1px solid rgb(0, 68, 255);
 
 }
+*/
+
+.contacto_formulario textarea{
+    height: 110px;
+    padding: 10px 10px;
+}
+
 .contacto_formulario p{
-    margin: 15px;
+    margin: 15px 0px;
     font-size: 16px;
 }
-.contacto_formulario a{
-    text-decoration: none;
+.boton{
     width: 120px;
     background: #660000FF;
     border: 1px solid #868686FF;
@@ -181,7 +192,7 @@ nav {
     padding: 10px;
     font-weight: 700;
 }
-.contacto_formulario a:hover{
+.boton:hover{
     background: rgb(145, 18, 18);
 }
 footer{
