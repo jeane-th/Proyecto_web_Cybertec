@@ -115,12 +115,14 @@ nav {
     height: 230px;
     border-radius: 100%;
 }
+.sedes img:hover{
+    transform: scale(1.2);
+}
 .sedes div div p{
     margin-top: 10px;
     font-size: 14px;
     text-align: center;
 }
-
 .contacto> div >div {
     display: flex;
     flex-direction: column;
@@ -181,7 +183,11 @@ nav {
     margin: 15px 0px;
     font-size: 16px;
 }
+.contacto_formulario span{
+    margin-left: 5px;
+}
 .boton{
+    margin-top: 20px;
     width: 120px;
     background: #660000FF;
     border: 1px solid #868686FF;
@@ -191,6 +197,7 @@ nav {
     text-align: center;
     padding: 10px;
     font-weight: 700;
+      cursor: pointer;
 }
 .boton:hover{
     background: rgb(145, 18, 18);
